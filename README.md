@@ -2,7 +2,7 @@
 
 **Know When to Push, Know When to Rest**
 
-RegenRate is a comprehensive fitness analytics and recovery recommendation system built with R Shiny. The application analyzes Apple Health data to provide personalized fitness insights, clustering analysis, regression modeling, and smart recovery recommendations based on user activity patterns.
+RegenRate is a health analytics and recovery recommendation system built with R Shiny. The application analyzes Apple Health data to provide personalized fitness insights, clustering analysis, regression modeling, and smart recovery recommendations based on user activity patterns.
 
 ## Project Overview
 
@@ -28,16 +28,15 @@ RegenRate helps users optimize their fitness routine by:
 - **Sleep Analysis**: Automatic sleep period detection using heart rate thresholds
 
 ### Modern UI/UX
-- Beautiful gradient background with glassmorphism effects
+- Gradient background 
 - Responsive design for mobile and desktop
 - Interactive progress indicators
 - Real-time data visualization
-- Font Awesome icons
 
 ### Data Visualization
 - Interactive plots and charts
 - Real-time metric visualization by date
-- Heart rate analysis and sleep tracking
+- Heart rate analysis
 - Clustering and regression result displays
 
 ## Installation
@@ -67,22 +66,6 @@ install.packages(c(
   "fontawesome"
 ))
 ```
-
-### Setup Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/RegenRate.git
-   cd RegenRate
-   ```
-
-2. Install required packages (see above)
-
-3. Run the application:
-   ```r
-   # In R or RStudio
-   source("app.R")
-   # Or simply run the app.R file
-   ```
 
 ## Project Structure
 
@@ -188,58 +171,12 @@ The `Intensity_Recovery_csv.R` script processes raw Apple Health export data:
 
 ## Technical Implementation
 
-### Architecture
-- **Frontend**: R Shiny with custom CSS
-- **Backend**: R with statistical analysis packages
-- **Data Storage**: CSV files for simplicity
-- **Processing**: R scripts for data transformation
-
 ### Key Algorithms
 1. **K-means Clustering**: Activity pattern identification
 2. **Linear Regression**: Predictive modeling
 3. **Elbow Method**: Optimal cluster determination
 4. **IQR Outlier Detection**: Data cleaning
 5. **Sleep Detection**: Heart rate threshold analysis
-
-### Performance Optimizations
-- **Data Caching**: Reactive values for efficient data handling
-- **Lazy Loading**: Load data only when needed
-- **Memory Management**: Efficient data structures
-- **UI Responsiveness**: Asynchronous processing
-
-## UI/UX Design
-
-### Design Principles
-- **Modern Aesthetics**: Gradient backgrounds and glassmorphism
-- **User-Centric**: Intuitive navigation and clear progress indicators
-- **Responsive**: Mobile-friendly design
-- **Accessible**: Clear typography and color contrast
-
-### Color Scheme
-- **Primary**: #667eea (Blue gradient)
-- **Secondary**: #764ba2 (Purple gradient)
-- **Text**: #2c3e50 (Dark blue)
-- **Accent**: #27ae60 (Green for success)
-
-## Usage Examples
-
-### 1. Initial Setup
-1. Create user profile with biometric data
-2. Upload Apple Health export.xml file
-3. Configure analysis parameters
-4. Run clustering and regression analysis
-
-### 2. Daily Analysis
-1. Select date for metric visualization
-2. Review activity patterns and recommendations
-3. Check recovery status and sleep analysis
-4. Adjust training intensity based on recommendations
-
-### 3. Long-term Tracking
-1. Monitor clustering patterns over time
-2. Track regression model performance
-3. Review historical recommendations
-4. Update profile as needed
 
 ## Data Validation
 

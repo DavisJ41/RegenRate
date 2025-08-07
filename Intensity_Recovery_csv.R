@@ -17,7 +17,7 @@ library(lubridate)
 library(xml2)
 
 #set working directory 
-#setwd("/Users/justin/Desktop/Data Science - Summer 2025/RegenRate")
+setwd("/Users/justin/Desktop/Data Science - Summer 2025/RegenRate")
 
 #getting working directory
 getwd()

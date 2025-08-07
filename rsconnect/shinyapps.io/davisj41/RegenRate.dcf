@@ -1,0 +1,12 @@
+name: RegenRate
+title: RegenRate
+username: davisj41
+account: davisj41
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15172559
+bundleId: 10738506
+url: https://davisj41.shinyapps.io/RegenRate/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
